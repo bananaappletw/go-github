@@ -3814,6 +3814,14 @@ func (b *BranchProtectionRuleEvent) GetChanges() *ProtectionChanges {
 	return b.Changes
 }
 
+// GetEnterprise returns the Enterprise field.
+func (b *BranchProtectionRuleEvent) GetEnterprise() *Enterprise {
+	if b == nil {
+		return nil
+	}
+	return b.Enterprise
+}
+
 // GetInstallation returns the Installation field.
 func (b *BranchProtectionRuleEvent) GetInstallation() *Installation {
 	if b == nil {
@@ -4438,6 +4446,14 @@ func (c *CheckRunEvent) GetCheckRun() *CheckRun {
 	return c.CheckRun
 }
 
+// GetEnterprise returns the Enterprise field.
+func (c *CheckRunEvent) GetEnterprise() *Enterprise {
+	if c == nil {
+		return nil
+	}
+	return c.Enterprise
+}
+
 // GetInstallation returns the Installation field.
 func (c *CheckRunEvent) GetInstallation() *Installation {
 	if c == nil {
@@ -4716,6 +4732,14 @@ func (c *CheckSuiteEvent) GetCheckSuite() *CheckSuite {
 		return nil
 	}
 	return c.CheckSuite
+}
+
+// GetEnterprise returns the Enterprise field.
+func (c *CheckSuiteEvent) GetEnterprise() *Enterprise {
+	if c == nil {
+		return nil
+	}
+	return c.Enterprise
 }
 
 // GetInstallation returns the Installation field.
@@ -5660,6 +5684,14 @@ func (c *CodeScanningAlertEvent) GetCommitOID() string {
 		return ""
 	}
 	return *c.CommitOID
+}
+
+// GetEnterprise returns the Enterprise field.
+func (c *CodeScanningAlertEvent) GetEnterprise() *Enterprise {
+	if c == nil {
+		return nil
+	}
+	return c.Enterprise
 }
 
 // GetInstallation returns the Installation field.
@@ -6988,6 +7020,14 @@ func (c *CommitCommentEvent) GetComment() *RepositoryComment {
 		return nil
 	}
 	return c.Comment
+}
+
+// GetEnterprise returns the Enterprise field.
+func (c *CommitCommentEvent) GetEnterprise() *Enterprise {
+	if c == nil {
+		return nil
+	}
+	return c.Enterprise
 }
 
 // GetInstallation returns the Installation field.
@@ -12430,6 +12470,14 @@ func (c *CreateEvent) GetDescription() string {
 	return *c.Description
 }
 
+// GetEnterprise returns the Enterprise field.
+func (c *CreateEvent) GetEnterprise() *Enterprise {
+	if c == nil {
+		return nil
+	}
+	return c.Enterprise
+}
+
 // GetInstallation returns the Installation field.
 func (c *CreateEvent) GetInstallation() *Installation {
 	if c == nil {
@@ -14310,6 +14358,14 @@ func (d *DeleteCostCenterResponse) GetName() string {
 	return d.Name
 }
 
+// GetEnterprise returns the Enterprise field.
+func (d *DeleteEvent) GetEnterprise() *Enterprise {
+	if d == nil {
+		return nil
+	}
+	return d.Enterprise
+}
+
 // GetInstallation returns the Installation field.
 func (d *DeleteEvent) GetInstallation() *Installation {
 	if d == nil {
@@ -14902,6 +14958,14 @@ func (d *DeployKeyEvent) GetAction() string {
 	return *d.Action
 }
 
+// GetEnterprise returns the Enterprise field.
+func (d *DeployKeyEvent) GetEnterprise() *Enterprise {
+	if d == nil {
+		return nil
+	}
+	return d.Enterprise
+}
+
 // GetInstallation returns the Installation field.
 func (d *DeployKeyEvent) GetInstallation() *Installation {
 	if d == nil {
@@ -15108,6 +15172,14 @@ func (d *DeploymentEvent) GetDeployment() *Deployment {
 		return nil
 	}
 	return d.Deployment
+}
+
+// GetEnterprise returns the Enterprise field.
+func (d *DeploymentEvent) GetEnterprise() *Enterprise {
+	if d == nil {
+		return nil
+	}
+	return d.Enterprise
 }
 
 // GetInstallation returns the Installation field.
@@ -15598,6 +15670,14 @@ func (d *DeploymentStatusEvent) GetDeploymentStatus() *DeploymentStatus {
 	return d.DeploymentStatus
 }
 
+// GetEnterprise returns the Enterprise field.
+func (d *DeploymentStatusEvent) GetEnterprise() *Enterprise {
+	if d == nil {
+		return nil
+	}
+	return d.Enterprise
+}
+
 // GetInstallation returns the Installation field.
 func (d *DeploymentStatusEvent) GetInstallation() *Installation {
 	if d == nil {
@@ -16086,6 +16166,14 @@ func (d *DiscussionCommentEvent) GetDiscussion() *Discussion {
 	return d.Discussion
 }
 
+// GetEnterprise returns the Enterprise field.
+func (d *DiscussionCommentEvent) GetEnterprise() *Enterprise {
+	if d == nil {
+		return nil
+	}
+	return d.Enterprise
+}
+
 // GetInstallation returns the Installation field.
 func (d *DiscussionCommentEvent) GetInstallation() *Installation {
 	if d == nil {
@@ -16140,6 +16228,14 @@ func (d *DiscussionEvent) GetDiscussion() *Discussion {
 		return nil
 	}
 	return d.Discussion
+}
+
+// GetEnterprise returns the Enterprise field.
+func (d *DiscussionEvent) GetEnterprise() *Enterprise {
+	if d == nil {
+		return nil
+	}
+	return d.Enterprise
 }
 
 // GetInstallation returns the Installation field.
@@ -18694,6 +18790,14 @@ func (f *FirstPatchedVersion) GetIdentifier() string {
 	return *f.Identifier
 }
 
+// GetEnterprise returns the Enterprise field.
+func (f *ForkEvent) GetEnterprise() *Enterprise {
+	if f == nil {
+		return nil
+	}
+	return f.Enterprise
+}
+
 // GetForkee returns the Forkee field.
 func (f *ForkEvent) GetForkee() *Repository {
 	if f == nil {
@@ -19284,6 +19388,14 @@ func (g *GlobalSecurityVulnerability) GetVulnerableVersionRange() string {
 		return ""
 	}
 	return *g.VulnerableVersionRange
+}
+
+// GetEnterprise returns the Enterprise field.
+func (g *GollumEvent) GetEnterprise() *Enterprise {
+	if g == nil {
+		return nil
+	}
+	return g.Enterprise
 }
 
 // GetInstallation returns the Installation field.
@@ -20950,6 +21062,14 @@ func (i *InstallationEvent) GetAction() string {
 	return *i.Action
 }
 
+// GetEnterprise returns the Enterprise field.
+func (i *InstallationEvent) GetEnterprise() *Enterprise {
+	if i == nil {
+		return nil
+	}
+	return i.Enterprise
+}
+
 // GetInstallation returns the Installation field.
 func (i *InstallationEvent) GetInstallation() *Installation {
 	if i == nil {
@@ -21708,6 +21828,14 @@ func (i *InstallationRepositoriesEvent) GetAction() string {
 		return ""
 	}
 	return *i.Action
+}
+
+// GetEnterprise returns the Enterprise field.
+func (i *InstallationRepositoriesEvent) GetEnterprise() *Enterprise {
+	if i == nil {
+		return nil
+	}
+	return i.Enterprise
 }
 
 // GetInstallation returns the Installation field.
@@ -22510,6 +22638,14 @@ func (i *IssueCommentEvent) GetComment() *IssueComment {
 	return i.Comment
 }
 
+// GetEnterprise returns the Enterprise field.
+func (i *IssueCommentEvent) GetEnterprise() *Enterprise {
+	if i == nil {
+		return nil
+	}
+	return i.Enterprise
+}
+
 // GetInstallation returns the Installation field.
 func (i *IssueCommentEvent) GetInstallation() *Installation {
 	if i == nil {
@@ -23230,6 +23366,14 @@ func (i *IssuesEvent) GetChanges() *EditChange {
 	return i.Changes
 }
 
+// GetEnterprise returns the Enterprise field.
+func (i *IssuesEvent) GetEnterprise() *Enterprise {
+	if i == nil {
+		return nil
+	}
+	return i.Enterprise
+}
+
 // GetInstallation returns the Installation field.
 func (i *IssuesEvent) GetInstallation() *Installation {
 	if i == nil {
@@ -23588,6 +23732,14 @@ func (l *LabelEvent) GetChanges() *EditChange {
 		return nil
 	}
 	return l.Changes
+}
+
+// GetEnterprise returns the Enterprise field.
+func (l *LabelEvent) GetEnterprise() *Enterprise {
+	if l == nil {
+		return nil
+	}
+	return l.Enterprise
 }
 
 // GetInstallation returns the Installation field.
@@ -25742,6 +25894,14 @@ func (m *MarketplacePurchaseEvent) GetEffectiveDate() Timestamp {
 	return *m.EffectiveDate
 }
 
+// GetEnterprise returns the Enterprise field.
+func (m *MarketplacePurchaseEvent) GetEnterprise() *Enterprise {
+	if m == nil {
+		return nil
+	}
+	return m.Enterprise
+}
+
 // GetInstallation returns the Installation field.
 func (m *MarketplacePurchaseEvent) GetInstallation() *Installation {
 	if m == nil {
@@ -25894,6 +26054,14 @@ func (m *MemberEvent) GetChanges() *MemberChanges {
 	return m.Changes
 }
 
+// GetEnterprise returns the Enterprise field.
+func (m *MemberEvent) GetEnterprise() *Enterprise {
+	if m == nil {
+		return nil
+	}
+	return m.Enterprise
+}
+
 // GetInstallation returns the Installation field.
 func (m *MemberEvent) GetInstallation() *Installation {
 	if m == nil {
@@ -25988,6 +26156,14 @@ func (m *MembershipEvent) GetAction() string {
 		return ""
 	}
 	return *m.Action
+}
+
+// GetEnterprise returns the Enterprise field.
+func (m *MembershipEvent) GetEnterprise() *Enterprise {
+	if m == nil {
+		return nil
+	}
+	return m.Enterprise
 }
 
 // GetInstallation returns the Installation field.
@@ -26212,6 +26388,14 @@ func (m *MetaEvent) GetAction() string {
 		return ""
 	}
 	return *m.Action
+}
+
+// GetEnterprise returns the Enterprise field.
+func (m *MetaEvent) GetEnterprise() *Enterprise {
+	if m == nil {
+		return nil
+	}
+	return m.Enterprise
 }
 
 // GetHook returns the Hook field.
@@ -26556,6 +26740,14 @@ func (m *MilestoneEvent) GetChanges() *EditChange {
 		return nil
 	}
 	return m.Changes
+}
+
+// GetEnterprise returns the Enterprise field.
+func (m *MilestoneEvent) GetEnterprise() *Enterprise {
+	if m == nil {
+		return nil
+	}
+	return m.Enterprise
 }
 
 // GetInstallation returns the Installation field.
@@ -27726,6 +27918,14 @@ func (o *OrganizationEvent) GetAction() string {
 	return *o.Action
 }
 
+// GetEnterprise returns the Enterprise field.
+func (o *OrganizationEvent) GetEnterprise() *Enterprise {
+	if o == nil {
+		return nil
+	}
+	return o.Enterprise
+}
+
 // GetInstallation returns the Installation field.
 func (o *OrganizationEvent) GetInstallation() *Installation {
 	if o == nil {
@@ -27828,6 +28028,14 @@ func (o *OrgBlockEvent) GetBlockedUser() *User {
 		return nil
 	}
 	return o.BlockedUser
+}
+
+// GetEnterprise returns the Enterprise field.
+func (o *OrgBlockEvent) GetEnterprise() *Enterprise {
+	if o == nil {
+		return nil
+	}
+	return o.Enterprise
 }
 
 // GetInstallation returns the Installation field.
@@ -28044,6 +28252,14 @@ func (p *PackageEvent) GetAction() string {
 		return ""
 	}
 	return *p.Action
+}
+
+// GetEnterprise returns the Enterprise field.
+func (p *PackageEvent) GetEnterprise() *Enterprise {
+	if p == nil {
+		return nil
+	}
+	return p.Enterprise
 }
 
 // GetInstallation returns the Installation field.
@@ -29126,6 +29342,14 @@ func (p *PageBuildEvent) GetBuild() *PagesBuild {
 	return p.Build
 }
 
+// GetEnterprise returns the Enterprise field.
+func (p *PageBuildEvent) GetEnterprise() *Enterprise {
+	if p == nil {
+		return nil
+	}
+	return p.Enterprise
+}
+
 // GetID returns the ID field if it's non-nil, zero value otherwise.
 func (p *PageBuildEvent) GetID() int64 {
 	if p == nil || p.ID == nil {
@@ -30052,6 +30276,14 @@ func (p *PersonalAccessTokenRequestEvent) GetAction() string {
 		return ""
 	}
 	return *p.Action
+}
+
+// GetEnterprise returns the Enterprise field.
+func (p *PersonalAccessTokenRequestEvent) GetEnterprise() *Enterprise {
+	if p == nil {
+		return nil
+	}
+	return p.Enterprise
 }
 
 // GetInstallation returns the Installation field.
@@ -32118,6 +32350,14 @@ func (p *ProtectionRule) GetWaitTimer() int {
 	return *p.WaitTimer
 }
 
+// GetEnterprise returns the Enterprise field.
+func (p *PublicEvent) GetEnterprise() *Enterprise {
+	if p == nil {
+		return nil
+	}
+	return p.Enterprise
+}
+
 // GetInstallation returns the Installation field.
 func (p *PublicEvent) GetInstallation() *Installation {
 	if p == nil {
@@ -33054,6 +33294,14 @@ func (p *PullRequestEvent) GetChanges() *EditChange {
 	return p.Changes
 }
 
+// GetEnterprise returns the Enterprise field.
+func (p *PullRequestEvent) GetEnterprise() *Enterprise {
+	if p == nil {
+		return nil
+	}
+	return p.Enterprise
+}
+
 // GetInstallation returns the Installation field.
 func (p *PullRequestEvent) GetInstallation() *Installation {
 	if p == nil {
@@ -33518,6 +33766,14 @@ func (p *PullRequestReviewCommentEvent) GetComment() *PullRequestComment {
 	return p.Comment
 }
 
+// GetEnterprise returns the Enterprise field.
+func (p *PullRequestReviewCommentEvent) GetEnterprise() *Enterprise {
+	if p == nil {
+		return nil
+	}
+	return p.Enterprise
+}
+
 // GetInstallation returns the Installation field.
 func (p *PullRequestReviewCommentEvent) GetInstallation() *Installation {
 	if p == nil {
@@ -33572,6 +33828,14 @@ func (p *PullRequestReviewEvent) GetChanges() *EditChange {
 		return nil
 	}
 	return p.Changes
+}
+
+// GetEnterprise returns the Enterprise field.
+func (p *PullRequestReviewEvent) GetEnterprise() *Enterprise {
+	if p == nil {
+		return nil
+	}
+	return p.Enterprise
 }
 
 // GetInstallation returns the Installation field.
@@ -33820,6 +34084,14 @@ func (p *PullRequestReviewThreadEvent) GetAction() string {
 		return ""
 	}
 	return *p.Action
+}
+
+// GetEnterprise returns the Enterprise field.
+func (p *PullRequestReviewThreadEvent) GetEnterprise() *Enterprise {
+	if p == nil {
+		return nil
+	}
+	return p.Enterprise
 }
 
 // GetInstallation returns the Installation field.
@@ -34604,6 +34876,14 @@ func (p *PushEvent) GetDistinctSize() int {
 		return 0
 	}
 	return *p.DistinctSize
+}
+
+// GetEnterprise returns the Enterprise field.
+func (p *PushEvent) GetEnterprise() *Enterprise {
+	if p == nil {
+		return nil
+	}
+	return p.Enterprise
 }
 
 // GetForced returns the Forced field if it's non-nil, zero value otherwise.
@@ -35612,6 +35892,14 @@ func (r *ReleaseEvent) GetAction() string {
 		return ""
 	}
 	return *r.Action
+}
+
+// GetEnterprise returns the Enterprise field.
+func (r *ReleaseEvent) GetEnterprise() *Enterprise {
+	if r == nil {
+		return nil
+	}
+	return r.Enterprise
 }
 
 // GetInstallation returns the Installation field.
@@ -37534,6 +37822,14 @@ func (r *RepositoryDispatchEvent) GetClientPayload() json.RawMessage {
 	return r.ClientPayload
 }
 
+// GetEnterprise returns the Enterprise field.
+func (r *RepositoryDispatchEvent) GetEnterprise() *Enterprise {
+	if r == nil {
+		return nil
+	}
+	return r.Enterprise
+}
+
 // GetInstallation returns the Installation field.
 func (r *RepositoryDispatchEvent) GetInstallation() *Installation {
 	if r == nil {
@@ -37582,6 +37878,14 @@ func (r *RepositoryEvent) GetChanges() *EditChange {
 	return r.Changes
 }
 
+// GetEnterprise returns the Enterprise field.
+func (r *RepositoryEvent) GetEnterprise() *Enterprise {
+	if r == nil {
+		return nil
+	}
+	return r.Enterprise
+}
+
 // GetInstallation returns the Installation field.
 func (r *RepositoryEvent) GetInstallation() *Installation {
 	if r == nil {
@@ -37612,6 +37916,14 @@ func (r *RepositoryEvent) GetSender() *User {
 		return nil
 	}
 	return r.Sender
+}
+
+// GetEnterprise returns the Enterprise field.
+func (r *RepositoryImportEvent) GetEnterprise() *Enterprise {
+	if r == nil {
+		return nil
+	}
+	return r.Enterprise
 }
 
 // GetOrg returns the Org field.
@@ -39252,6 +39564,14 @@ func (r *RepositoryVulnerabilityAlertEvent) GetAlert() *RepositoryVulnerabilityA
 		return nil
 	}
 	return r.Alert
+}
+
+// GetEnterprise returns the Enterprise field.
+func (r *RepositoryVulnerabilityAlertEvent) GetEnterprise() *Enterprise {
+	if r == nil {
+		return nil
+	}
+	return r.Enterprise
 }
 
 // GetInstallation returns the Installation field.
@@ -43270,6 +43590,14 @@ func (s *SponsorshipEvent) GetEffectiveDate() string {
 	return *s.EffectiveDate
 }
 
+// GetEnterprise returns the Enterprise field.
+func (s *SponsorshipEvent) GetEnterprise() *Enterprise {
+	if s == nil {
+		return nil
+	}
+	return s.Enterprise
+}
+
 // GetInstallation returns the Installation field.
 func (s *SponsorshipEvent) GetInstallation() *Installation {
 	if s == nil {
@@ -43390,6 +43718,14 @@ func (s *StarEvent) GetAction() string {
 	return *s.Action
 }
 
+// GetEnterprise returns the Enterprise field.
+func (s *StarEvent) GetEnterprise() *Enterprise {
+	if s == nil {
+		return nil
+	}
+	return s.Enterprise
+}
+
 // GetInstallation returns the Installation field.
 func (s *StarEvent) GetInstallation() *Installation {
 	if s == nil {
@@ -43500,6 +43836,14 @@ func (s *StatusEvent) GetDescription() string {
 		return ""
 	}
 	return *s.Description
+}
+
+// GetEnterprise returns the Enterprise field.
+func (s *StatusEvent) GetEnterprise() *Enterprise {
+	if s == nil {
+		return nil
+	}
+	return s.Enterprise
 }
 
 // GetID returns the ID field if it's non-nil, zero value otherwise.
@@ -44070,6 +44414,14 @@ func (t *Team) GetURL() string {
 	return *t.URL
 }
 
+// GetEnterprise returns the Enterprise field.
+func (t *TeamAddEvent) GetEnterprise() *Enterprise {
+	if t == nil {
+		return nil
+	}
+	return t.Enterprise
+}
+
 // GetInstallation returns the Installation field.
 func (t *TeamAddEvent) GetInstallation() *Installation {
 	if t == nil {
@@ -44324,6 +44676,14 @@ func (t *TeamEvent) GetChanges() *TeamChange {
 		return nil
 	}
 	return t.Changes
+}
+
+// GetEnterprise returns the Enterprise field.
+func (t *TeamEvent) GetEnterprise() *Enterprise {
+	if t == nil {
+		return nil
+	}
+	return t.Enterprise
 }
 
 // GetInstallation returns the Installation field.
@@ -47750,6 +48110,14 @@ func (w *WatchEvent) GetAction() string {
 	return *w.Action
 }
 
+// GetEnterprise returns the Enterprise field.
+func (w *WatchEvent) GetEnterprise() *Enterprise {
+	if w == nil {
+		return nil
+	}
+	return w.Enterprise
+}
+
 // GetInstallation returns the Installation field.
 func (w *WatchEvent) GetInstallation() *Installation {
 	if w == nil {
@@ -47924,6 +48292,14 @@ func (w *WorkflowBill) GetTotalMS() int64 {
 		return 0
 	}
 	return *w.TotalMS
+}
+
+// GetEnterprise returns the Enterprise field.
+func (w *WorkflowDispatchEvent) GetEnterprise() *Enterprise {
+	if w == nil {
+		return nil
+	}
+	return w.Enterprise
 }
 
 // GetInputs returns the Inputs field.
@@ -48204,6 +48580,14 @@ func (w *WorkflowJobEvent) GetDeployment() *Deployment {
 		return nil
 	}
 	return w.Deployment
+}
+
+// GetEnterprise returns the Enterprise field.
+func (w *WorkflowJobEvent) GetEnterprise() *Enterprise {
+	if w == nil {
+		return nil
+	}
+	return w.Enterprise
 }
 
 // GetInstallation returns the Installation field.
@@ -48628,6 +49012,14 @@ func (w *WorkflowRunEvent) GetAction() string {
 		return ""
 	}
 	return *w.Action
+}
+
+// GetEnterprise returns the Enterprise field.
+func (w *WorkflowRunEvent) GetEnterprise() *Enterprise {
+	if w == nil {
+		return nil
+	}
+	return w.Enterprise
 }
 
 // GetInstallation returns the Installation field.

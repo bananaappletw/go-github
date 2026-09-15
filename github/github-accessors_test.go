@@ -4832,6 +4832,14 @@ func TestBranchProtectionRuleEvent_GetChanges(tt *testing.T) {
 	b.GetChanges()
 }
 
+func TestBranchProtectionRuleEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	b := &BranchProtectionRuleEvent{}
+	b.GetEnterprise()
+	b = nil
+	b.GetEnterprise()
+}
+
 func TestBranchProtectionRuleEvent_GetInstallation(tt *testing.T) {
 	tt.Parallel()
 	b := &BranchProtectionRuleEvent{}
@@ -5633,6 +5641,14 @@ func TestCheckRunEvent_GetCheckRun(tt *testing.T) {
 	c.GetCheckRun()
 }
 
+func TestCheckRunEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	c := &CheckRunEvent{}
+	c.GetEnterprise()
+	c = nil
+	c.GetEnterprise()
+}
+
 func TestCheckRunEvent_GetInstallation(tt *testing.T) {
 	tt.Parallel()
 	c := &CheckRunEvent{}
@@ -5989,6 +6005,14 @@ func TestCheckSuiteEvent_GetCheckSuite(tt *testing.T) {
 	c.GetCheckSuite()
 	c = nil
 	c.GetCheckSuite()
+}
+
+func TestCheckSuiteEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	c := &CheckSuiteEvent{}
+	c.GetEnterprise()
+	c = nil
+	c.GetEnterprise()
 }
 
 func TestCheckSuiteEvent_GetInstallation(tt *testing.T) {
@@ -7176,6 +7200,14 @@ func TestCodeScanningAlertEvent_GetCommitOID(tt *testing.T) {
 	c.GetCommitOID()
 	c = nil
 	c.GetCommitOID()
+}
+
+func TestCodeScanningAlertEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	c := &CodeScanningAlertEvent{}
+	c.GetEnterprise()
+	c = nil
+	c.GetEnterprise()
 }
 
 func TestCodeScanningAlertEvent_GetInstallation(tt *testing.T) {
@@ -8885,6 +8917,14 @@ func TestCommitCommentEvent_GetComment(tt *testing.T) {
 	c.GetComment()
 	c = nil
 	c.GetComment()
+}
+
+func TestCommitCommentEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	c := &CommitCommentEvent{}
+	c.GetEnterprise()
+	c = nil
+	c.GetEnterprise()
 }
 
 func TestCommitCommentEvent_GetInstallation(tt *testing.T) {
@@ -15677,6 +15717,14 @@ func TestCreateEvent_GetDescription(tt *testing.T) {
 	c.GetDescription()
 }
 
+func TestCreateEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	c := &CreateEvent{}
+	c.GetEnterprise()
+	c = nil
+	c.GetEnterprise()
+}
+
 func TestCreateEvent_GetInstallation(tt *testing.T) {
 	tt.Parallel()
 	c := &CreateEvent{}
@@ -18055,6 +18103,14 @@ func TestDeleteCostCenterResponse_GetName(tt *testing.T) {
 	d.GetName()
 }
 
+func TestDeleteEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	d := &DeleteEvent{}
+	d.GetEnterprise()
+	d = nil
+	d.GetEnterprise()
+}
+
 func TestDeleteEvent_GetInstallation(tt *testing.T) {
 	tt.Parallel()
 	d := &DeleteEvent{}
@@ -18785,6 +18841,14 @@ func TestDeployKeyEvent_GetAction(tt *testing.T) {
 	d.GetAction()
 }
 
+func TestDeployKeyEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	d := &DeployKeyEvent{}
+	d.GetEnterprise()
+	d = nil
+	d.GetEnterprise()
+}
+
 func TestDeployKeyEvent_GetInstallation(tt *testing.T) {
 	tt.Parallel()
 	d := &DeployKeyEvent{}
@@ -19045,6 +19109,14 @@ func TestDeploymentEvent_GetDeployment(tt *testing.T) {
 	d.GetDeployment()
 	d = nil
 	d.GetDeployment()
+}
+
+func TestDeploymentEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	d := &DeploymentEvent{}
+	d.GetEnterprise()
+	d = nil
+	d.GetEnterprise()
 }
 
 func TestDeploymentEvent_GetInstallation(tt *testing.T) {
@@ -19629,6 +19701,14 @@ func TestDeploymentStatusEvent_GetDeploymentStatus(tt *testing.T) {
 	d.GetDeploymentStatus()
 	d = nil
 	d.GetDeploymentStatus()
+}
+
+func TestDeploymentStatusEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	d := &DeploymentStatusEvent{}
+	d.GetEnterprise()
+	d = nil
+	d.GetEnterprise()
 }
 
 func TestDeploymentStatusEvent_GetInstallation(tt *testing.T) {
@@ -20263,6 +20343,14 @@ func TestDiscussionCommentEvent_GetDiscussion(tt *testing.T) {
 	d.GetDiscussion()
 }
 
+func TestDiscussionCommentEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	d := &DiscussionCommentEvent{}
+	d.GetEnterprise()
+	d = nil
+	d.GetEnterprise()
+}
+
 func TestDiscussionCommentEvent_GetInstallation(tt *testing.T) {
 	tt.Parallel()
 	d := &DiscussionCommentEvent{}
@@ -20320,6 +20408,14 @@ func TestDiscussionEvent_GetDiscussion(tt *testing.T) {
 	d.GetDiscussion()
 	d = nil
 	d.GetDiscussion()
+}
+
+func TestDiscussionEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	d := &DiscussionEvent{}
+	d.GetEnterprise()
+	d = nil
+	d.GetEnterprise()
 }
 
 func TestDiscussionEvent_GetInstallation(tt *testing.T) {
@@ -23396,6 +23492,14 @@ func TestFirstPatchedVersion_GetIdentifier(tt *testing.T) {
 	f.GetIdentifier()
 }
 
+func TestForkEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	f := &ForkEvent{}
+	f.GetEnterprise()
+	f = nil
+	f.GetEnterprise()
+}
+
 func TestForkEvent_GetForkee(tt *testing.T) {
 	tt.Parallel()
 	f := &ForkEvent{}
@@ -24163,6 +24267,14 @@ func TestGlobalSecurityVulnerability_GetVulnerableVersionRange(tt *testing.T) {
 	g.GetVulnerableVersionRange()
 	g = nil
 	g.GetVulnerableVersionRange()
+}
+
+func TestGollumEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	g := &GollumEvent{}
+	g.GetEnterprise()
+	g = nil
+	g.GetEnterprise()
 }
 
 func TestGollumEvent_GetInstallation(tt *testing.T) {
@@ -26249,6 +26361,14 @@ func TestInstallationEvent_GetAction(tt *testing.T) {
 	i.GetAction()
 }
 
+func TestInstallationEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	i := &InstallationEvent{}
+	i.GetEnterprise()
+	i = nil
+	i.GetEnterprise()
+}
+
 func TestInstallationEvent_GetInstallation(tt *testing.T) {
 	tt.Parallel()
 	i := &InstallationEvent{}
@@ -27282,6 +27402,14 @@ func TestInstallationRepositoriesEvent_GetAction(tt *testing.T) {
 	i.GetAction()
 }
 
+func TestInstallationRepositoriesEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	i := &InstallationRepositoriesEvent{}
+	i.GetEnterprise()
+	i = nil
+	i.GetEnterprise()
+}
+
 func TestInstallationRepositoriesEvent_GetInstallation(tt *testing.T) {
 	tt.Parallel()
 	i := &InstallationRepositoriesEvent{}
@@ -28277,6 +28405,14 @@ func TestIssueCommentEvent_GetComment(tt *testing.T) {
 	i.GetComment()
 }
 
+func TestIssueCommentEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	i := &IssueCommentEvent{}
+	i.GetEnterprise()
+	i = nil
+	i.GetEnterprise()
+}
+
 func TestIssueCommentEvent_GetInstallation(tt *testing.T) {
 	tt.Parallel()
 	i := &IssueCommentEvent{}
@@ -29114,6 +29250,14 @@ func TestIssuesEvent_GetChanges(tt *testing.T) {
 	i.GetChanges()
 }
 
+func TestIssuesEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	i := &IssuesEvent{}
+	i.GetEnterprise()
+	i = nil
+	i.GetEnterprise()
+}
+
 func TestIssuesEvent_GetInstallation(tt *testing.T) {
 	tt.Parallel()
 	i := &IssuesEvent{}
@@ -29562,6 +29706,14 @@ func TestLabelEvent_GetChanges(tt *testing.T) {
 	l.GetChanges()
 	l = nil
 	l.GetChanges()
+}
+
+func TestLabelEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	l := &LabelEvent{}
+	l.GetEnterprise()
+	l = nil
+	l.GetEnterprise()
 }
 
 func TestLabelEvent_GetInstallation(tt *testing.T) {
@@ -32217,6 +32369,14 @@ func TestMarketplacePurchaseEvent_GetEffectiveDate(tt *testing.T) {
 	m.GetEffectiveDate()
 }
 
+func TestMarketplacePurchaseEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	m := &MarketplacePurchaseEvent{}
+	m.GetEnterprise()
+	m = nil
+	m.GetEnterprise()
+}
+
 func TestMarketplacePurchaseEvent_GetInstallation(tt *testing.T) {
 	tt.Parallel()
 	m := &MarketplacePurchaseEvent{}
@@ -32390,6 +32550,14 @@ func TestMemberEvent_GetChanges(tt *testing.T) {
 	m.GetChanges()
 }
 
+func TestMemberEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	m := &MemberEvent{}
+	m.GetEnterprise()
+	m = nil
+	m.GetEnterprise()
+}
+
 func TestMemberEvent_GetInstallation(tt *testing.T) {
 	tt.Parallel()
 	m := &MemberEvent{}
@@ -32499,6 +32667,14 @@ func TestMembershipEvent_GetAction(tt *testing.T) {
 	m.GetAction()
 	m = nil
 	m.GetAction()
+}
+
+func TestMembershipEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	m := &MembershipEvent{}
+	m.GetEnterprise()
+	m = nil
+	m.GetEnterprise()
 }
 
 func TestMembershipEvent_GetInstallation(tt *testing.T) {
@@ -32750,6 +32926,14 @@ func TestMetaEvent_GetAction(tt *testing.T) {
 	m.GetAction()
 	m = nil
 	m.GetAction()
+}
+
+func TestMetaEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	m := &MetaEvent{}
+	m.GetEnterprise()
+	m = nil
+	m.GetEnterprise()
 }
 
 func TestMetaEvent_GetHook(tt *testing.T) {
@@ -33193,6 +33377,14 @@ func TestMilestoneEvent_GetChanges(tt *testing.T) {
 	m.GetChanges()
 	m = nil
 	m.GetChanges()
+}
+
+func TestMilestoneEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	m := &MilestoneEvent{}
+	m.GetEnterprise()
+	m = nil
+	m.GetEnterprise()
 }
 
 func TestMilestoneEvent_GetInstallation(tt *testing.T) {
@@ -34735,6 +34927,14 @@ func TestOrganizationEvent_GetAction(tt *testing.T) {
 	o.GetAction()
 }
 
+func TestOrganizationEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	o := &OrganizationEvent{}
+	o.GetEnterprise()
+	o = nil
+	o.GetEnterprise()
+}
+
 func TestOrganizationEvent_GetInstallation(tt *testing.T) {
 	tt.Parallel()
 	o := &OrganizationEvent{}
@@ -34846,6 +35046,14 @@ func TestOrgBlockEvent_GetBlockedUser(tt *testing.T) {
 	o.GetBlockedUser()
 	o = nil
 	o.GetBlockedUser()
+}
+
+func TestOrgBlockEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	o := &OrgBlockEvent{}
+	o.GetEnterprise()
+	o = nil
+	o.GetEnterprise()
 }
 
 func TestOrgBlockEvent_GetInstallation(tt *testing.T) {
@@ -35116,6 +35324,14 @@ func TestPackageEvent_GetAction(tt *testing.T) {
 	p.GetAction()
 	p = nil
 	p.GetAction()
+}
+
+func TestPackageEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	p := &PackageEvent{}
+	p.GetEnterprise()
+	p = nil
+	p.GetEnterprise()
 }
 
 func TestPackageEvent_GetInstallation(tt *testing.T) {
@@ -36531,6 +36747,14 @@ func TestPageBuildEvent_GetBuild(tt *testing.T) {
 	p.GetBuild()
 }
 
+func TestPageBuildEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	p := &PageBuildEvent{}
+	p.GetEnterprise()
+	p = nil
+	p.GetEnterprise()
+}
+
 func TestPageBuildEvent_GetID(tt *testing.T) {
 	tt.Parallel()
 	var zeroValue int64
@@ -37730,6 +37954,14 @@ func TestPersonalAccessTokenRequestEvent_GetAction(tt *testing.T) {
 	p.GetAction()
 	p = nil
 	p.GetAction()
+}
+
+func TestPersonalAccessTokenRequestEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	p := &PersonalAccessTokenRequestEvent{}
+	p.GetEnterprise()
+	p = nil
+	p.GetEnterprise()
 }
 
 func TestPersonalAccessTokenRequestEvent_GetInstallation(tt *testing.T) {
@@ -40243,6 +40475,14 @@ func TestProtectionRule_GetWaitTimer(tt *testing.T) {
 	p.GetWaitTimer()
 }
 
+func TestPublicEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	p := &PublicEvent{}
+	p.GetEnterprise()
+	p = nil
+	p.GetEnterprise()
+}
+
 func TestPublicEvent_GetInstallation(tt *testing.T) {
 	tt.Parallel()
 	p := &PublicEvent{}
@@ -41446,6 +41686,14 @@ func TestPullRequestEvent_GetChanges(tt *testing.T) {
 	p.GetChanges()
 }
 
+func TestPullRequestEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	p := &PullRequestEvent{}
+	p.GetEnterprise()
+	p = nil
+	p.GetEnterprise()
+}
+
 func TestPullRequestEvent_GetInstallation(tt *testing.T) {
 	tt.Parallel()
 	p := &PullRequestEvent{}
@@ -42006,6 +42254,14 @@ func TestPullRequestReviewCommentEvent_GetComment(tt *testing.T) {
 	p.GetComment()
 }
 
+func TestPullRequestReviewCommentEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	p := &PullRequestReviewCommentEvent{}
+	p.GetEnterprise()
+	p = nil
+	p.GetEnterprise()
+}
+
 func TestPullRequestReviewCommentEvent_GetInstallation(tt *testing.T) {
 	tt.Parallel()
 	p := &PullRequestReviewCommentEvent{}
@@ -42063,6 +42319,14 @@ func TestPullRequestReviewEvent_GetChanges(tt *testing.T) {
 	p.GetChanges()
 	p = nil
 	p.GetChanges()
+}
+
+func TestPullRequestReviewEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	p := &PullRequestReviewEvent{}
+	p.GetEnterprise()
+	p = nil
+	p.GetEnterprise()
 }
 
 func TestPullRequestReviewEvent_GetInstallation(tt *testing.T) {
@@ -42344,6 +42608,14 @@ func TestPullRequestReviewThreadEvent_GetAction(tt *testing.T) {
 	p.GetAction()
 	p = nil
 	p.GetAction()
+}
+
+func TestPullRequestReviewThreadEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	p := &PullRequestReviewThreadEvent{}
+	p.GetEnterprise()
+	p = nil
+	p.GetEnterprise()
 }
 
 func TestPullRequestReviewThreadEvent_GetInstallation(tt *testing.T) {
@@ -43230,6 +43502,14 @@ func TestPushEvent_GetDistinctSize(tt *testing.T) {
 	p.GetDistinctSize()
 	p = nil
 	p.GetDistinctSize()
+}
+
+func TestPushEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	p := &PushEvent{}
+	p.GetEnterprise()
+	p = nil
+	p.GetEnterprise()
 }
 
 func TestPushEvent_GetForced(tt *testing.T) {
@@ -44493,6 +44773,14 @@ func TestReleaseEvent_GetAction(tt *testing.T) {
 	r.GetAction()
 	r = nil
 	r.GetAction()
+}
+
+func TestReleaseEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	r := &ReleaseEvent{}
+	r.GetEnterprise()
+	r = nil
+	r.GetEnterprise()
 }
 
 func TestReleaseEvent_GetInstallation(tt *testing.T) {
@@ -46994,6 +47282,14 @@ func TestRepositoryDispatchEvent_GetClientPayload(tt *testing.T) {
 	r.GetClientPayload()
 }
 
+func TestRepositoryDispatchEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	r := &RepositoryDispatchEvent{}
+	r.GetEnterprise()
+	r = nil
+	r.GetEnterprise()
+}
+
 func TestRepositoryDispatchEvent_GetInstallation(tt *testing.T) {
 	tt.Parallel()
 	r := &RepositoryDispatchEvent{}
@@ -47045,6 +47341,14 @@ func TestRepositoryEvent_GetChanges(tt *testing.T) {
 	r.GetChanges()
 }
 
+func TestRepositoryEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	r := &RepositoryEvent{}
+	r.GetEnterprise()
+	r = nil
+	r.GetEnterprise()
+}
+
 func TestRepositoryEvent_GetInstallation(tt *testing.T) {
 	tt.Parallel()
 	r := &RepositoryEvent{}
@@ -47075,6 +47379,14 @@ func TestRepositoryEvent_GetSender(tt *testing.T) {
 	r.GetSender()
 	r = nil
 	r.GetSender()
+}
+
+func TestRepositoryImportEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	r := &RepositoryImportEvent{}
+	r.GetEnterprise()
+	r = nil
+	r.GetEnterprise()
 }
 
 func TestRepositoryImportEvent_GetOrg(tt *testing.T) {
@@ -48973,6 +49285,14 @@ func TestRepositoryVulnerabilityAlertEvent_GetAlert(tt *testing.T) {
 	r.GetAlert()
 	r = nil
 	r.GetAlert()
+}
+
+func TestRepositoryVulnerabilityAlertEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	r := &RepositoryVulnerabilityAlertEvent{}
+	r.GetEnterprise()
+	r = nil
+	r.GetEnterprise()
 }
 
 func TestRepositoryVulnerabilityAlertEvent_GetInstallation(tt *testing.T) {
@@ -53960,6 +54280,14 @@ func TestSponsorshipEvent_GetEffectiveDate(tt *testing.T) {
 	s.GetEffectiveDate()
 }
 
+func TestSponsorshipEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	s := &SponsorshipEvent{}
+	s.GetEnterprise()
+	s = nil
+	s.GetEnterprise()
+}
+
 func TestSponsorshipEvent_GetInstallation(tt *testing.T) {
 	tt.Parallel()
 	s := &SponsorshipEvent{}
@@ -54110,6 +54438,14 @@ func TestStarEvent_GetAction(tt *testing.T) {
 	s.GetAction()
 }
 
+func TestStarEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	s := &StarEvent{}
+	s.GetEnterprise()
+	s = nil
+	s.GetEnterprise()
+}
+
 func TestStarEvent_GetInstallation(tt *testing.T) {
 	tt.Parallel()
 	s := &StarEvent{}
@@ -54241,6 +54577,14 @@ func TestStatusEvent_GetDescription(tt *testing.T) {
 	s.GetDescription()
 	s = nil
 	s.GetDescription()
+}
+
+func TestStatusEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	s := &StatusEvent{}
+	s.GetEnterprise()
+	s = nil
+	s.GetEnterprise()
 }
 
 func TestStatusEvent_GetID(tt *testing.T) {
@@ -54985,6 +55329,14 @@ func TestTeam_GetURL(tt *testing.T) {
 	t.GetURL()
 }
 
+func TestTeamAddEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	t := &TeamAddEvent{}
+	t.GetEnterprise()
+	t = nil
+	t.GetEnterprise()
+}
+
 func TestTeamAddEvent_GetInstallation(tt *testing.T) {
 	tt.Parallel()
 	t := &TeamAddEvent{}
@@ -55293,6 +55645,14 @@ func TestTeamEvent_GetChanges(tt *testing.T) {
 	t.GetChanges()
 	t = nil
 	t.GetChanges()
+}
+
+func TestTeamEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	t := &TeamEvent{}
+	t.GetEnterprise()
+	t = nil
+	t.GetEnterprise()
 }
 
 func TestTeamEvent_GetInstallation(tt *testing.T) {
@@ -59721,6 +60081,14 @@ func TestWatchEvent_GetAction(tt *testing.T) {
 	w.GetAction()
 }
 
+func TestWatchEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	w := &WatchEvent{}
+	w.GetEnterprise()
+	w = nil
+	w.GetEnterprise()
+}
+
 func TestWatchEvent_GetInstallation(tt *testing.T) {
 	tt.Parallel()
 	w := &WatchEvent{}
@@ -59949,6 +60317,14 @@ func TestWorkflowBill_GetTotalMS(tt *testing.T) {
 	w.GetTotalMS()
 	w = nil
 	w.GetTotalMS()
+}
+
+func TestWorkflowDispatchEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	w := &WorkflowDispatchEvent{}
+	w.GetEnterprise()
+	w = nil
+	w.GetEnterprise()
 }
 
 func TestWorkflowDispatchEvent_GetInputs(tt *testing.T) {
@@ -60316,6 +60692,14 @@ func TestWorkflowJobEvent_GetDeployment(tt *testing.T) {
 	w.GetDeployment()
 	w = nil
 	w.GetDeployment()
+}
+
+func TestWorkflowJobEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	w := &WorkflowJobEvent{}
+	w.GetEnterprise()
+	w = nil
+	w.GetEnterprise()
 }
 
 func TestWorkflowJobEvent_GetInstallation(tt *testing.T) {
@@ -60869,6 +61253,14 @@ func TestWorkflowRunEvent_GetAction(tt *testing.T) {
 	w.GetAction()
 	w = nil
 	w.GetAction()
+}
+
+func TestWorkflowRunEvent_GetEnterprise(tt *testing.T) {
+	tt.Parallel()
+	w := &WorkflowRunEvent{}
+	w.GetEnterprise()
+	w = nil
+	w.GetEnterprise()
 }
 
 func TestWorkflowRunEvent_GetInstallation(tt *testing.T) {

@@ -1832,11 +1832,12 @@ func TestPushEvent_String(t *testing.T) {
 		Repo:         &PushEventRepository{},
 		HeadCommit:   &HeadCommit{},
 		Pusher:       &CommitAuthor{},
+		Enterprise:   &Enterprise{},
 		Sender:       &User{},
 		Installation: &Installation{},
 		Organization: &Organization{},
 	}
-	want := `github.PushEvent{PushID:0, Head:"", Ref:"", Size:0, Before:"", DistinctSize:0, Action:"", After:"", Created:false, Deleted:false, Forced:false, BaseRef:"", Compare:"", Repo:github.PushEventRepository{}, HeadCommit:github.HeadCommit{}, Pusher:github.CommitAuthor{}, Sender:github.User{}, Installation:github.Installation{}, Organization:github.Organization{}}`
+	want := `github.PushEvent{PushID:0, Head:"", Ref:"", Size:0, Before:"", DistinctSize:0, Action:"", After:"", Created:false, Deleted:false, Forced:false, BaseRef:"", Compare:"", Repo:github.PushEventRepository{}, HeadCommit:github.HeadCommit{}, Pusher:github.CommitAuthor{}, Enterprise:github.Enterprise{}, Sender:github.User{}, Installation:github.Installation{}, Organization:github.Organization{}}`
 	if got := v.String(); got != want {
 		t.Errorf("PushEvent.String = %v, want %v", got, want)
 	}
